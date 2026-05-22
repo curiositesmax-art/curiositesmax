@@ -1,0 +1,643 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* 1. On applique d'abord Roboto à tout le site */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+/* 2. On change EN DEUXIÈME la police du logo pour qu'elle gagne */
+*{
+    font-family: "Anton", sans-serif !important;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@100;300;400;500&display=swap');
+*{
+    font-family: "Anton", sans-serif;
+    text-transform: uppercase; /* Met le logo en majuscules si besoin */
+}  
+
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@100;300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: floralwhite;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10%;
+    box-shadow: 0 0 20px rgba(0,0,0,0,1);
+    z-index: 100;
+
+}
+
+
+
+/* Ligne 52 : Mets bien le tiret bas '_' pour correspondre au HTML */
+.menu_icons {
+    width: 35px;
+    cursor: pointer;
+}
+
+/* Ligne 57 : Ton logo va enfin recevoir ses instructions */
+.logo {
+    width: 120px;       /* 👈 Donne une petite largeur fixe au logo */
+    height: auto;       /* 👈 Garde les proportions de l'image pour ne pas la déformer */
+    object-fit: contain;
+}
+
+.logo {
+    width: 60px;          /* 👈 Tu peux réduire légèrement la taille pour que le rond s'intègre bien */
+    height: 100px;         /* 👈 Donne la même hauteur que la largeur pour garantir un cercle parfait */
+    border-radius: 50%;   /* 👈 C'est cette ligne qui rend l'image complètement ronde */
+    object-fit: cover;    /* 👈 Permet à l'image de bien se centrer dans le cercle sans se déformer */
+}
+
+
+
+.menu icons {
+    width: 35px;
+    cursor: pointer;
+}
+
+.logo {
+    width: 120px;       /* 👈 Donne une petite largeur fixe au logo */
+    height: auto;       /* 👈 Garde les proportions de l'image pour ne pas la déformer */
+    object-fit: contain;
+   
+}
+
+
+.logo {
+    width: 100px;
+    margin-left: -10%;
+
+}
+button img {
+    width: 40px;
+    margin-left: 20px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+.menu ul {
+    margin-left: 65px;
+    display: flex;
+    list-style: none;
+}
+.menu ul a { 
+margin-left: 20px;
+text-transform: capitalize;
+font-size: 13px;
+color: #000;
+text-decoration: 0;
+position: relative;
+}
+.menu ul a::after {
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #f7a800;
+    transition: 0.1s ease-out;
+}
+.menu ul a:hover::after {
+    width: 100%;
+}
+
+
+.actions-container {
+    display: flex;
+    flex-direction: column; /* 👈 Aligne les éléments du haut vers le bas */
+    align-items: center;    /* 👈 Centre le téléphone pile sous le bouton */
+    gap: 5px;               /* 👈 Espace de 5px entre le bouton et le téléphone */
+    margin-left: 15px;      /* Garde l'espace avec la couronne */
+}
+.phone-contact {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.phone-contact i {
+    font-size: 14px;        /* 👈 Un tout petit peu plus petit pour que ce soit élégant sous le bouton */
+    color: #000000;
+}
+.phone-contact a {
+    font-family: 'Anton', sans-serif;
+    font-size: 14px;        /* 👈 Taille adaptée pour le dessous du bouton */
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.phone-contact a:hover {
+    color: #bb2337;
+}
+
+
+.header-end {
+    display: flex;
+    align-items: center;
+}
+.header-end i {
+    margin-right: 40px;
+}
+button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 0;
+    padding: 8px 8px;
+    background-color: #bb2337;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 50px;
+    z-index: 1;
+    transition: 0.2s ease-out;
+}
+button span {
+    font-family: 'Anton', sans-serif;
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+}
+button:hover {
+    transform: scale(1.06);
+
+}
+
+.fa-crown {
+    position: relative;
+    padding: 20px;
+}
+
+/* C'est ce conteneur qui sert maintenant de repère fixe */
+.crown-container {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Ta boîte login (ne change pas beaucoup, on s'assure juste de sa position) */
+.login {
+    position: absolute;
+    right: 0;
+    top: 45px;             /* Positionne la boîte pile sous la couronne */
+    width: 270px;
+    padding: 20px;
+    display: none;         /* Cachée par défaut */
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff !important; /* Couleur de fond blanche forcée */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    border-radius: 6px;
+    z-index: 9999;         /* S'affiche par-dessus le reste du site */
+}
+
+/* L'EFFET MAGIQUE CORRIGÉ : */
+/* Quand la souris survole le CONTENEUR, on affiche la boîte .login */
+.crown-container:hover .login {
+    display: block;
+}
+
+.login {
+    position: absolute;
+    right: -22px;
+    top: 60px;
+    width: 270px;
+    padding: 20px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0,0,0,0,2);
+    border-radius: 6px;
+}
+
+.login button {
+    width: 100%;
+    background-color: #f7a800;
+}
+hr {
+    border: 0;
+    margin: 30px 0;
+    background-color: #999;
+    width: 100%;
+    height: 1px;
+} 
+.login p {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+.login button:last-child {
+    background-color: transparent;
+    color: #f7a800;
+    border: 1px solid #f7a800;
+}
+.login::after {
+    position: absolute;
+    right: 40px;
+    top: -8px;
+    content: "";
+    height: 25px;
+    width: 25px;
+    z-index: -3;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0,0,0,0,2);
+    transform: rotate(50deg);
+
+}
+.login::before {
+    position: absolute;
+    right: 40px;
+    top: -8px;
+    content: "";
+    height: 25px;
+    width: 25px;
+    background-color: #fff;
+    transform: rotate(50deg);
+}
+.fa-crown:hover .login {
+display: block;
+}
+/* home */
+.home {
+    margin-top: 80px;
+    background: url(img2.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: calc(100vh - 200px);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 40px;
+}
+/* foods */
+.foods {
+    margin: 50px 0;
+    padding: 0 10%;
+}
+h1 {
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Anton ' , sans-serif;
+}
+.foods p {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+.foods-list {
+    display: flex;
+    justify-content: space-between;
+}
+.foods-list img {
+    box-shadow: 0 0 9px rgba(0,0,0,0,1);
+    width: 350px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+h3 {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.foods-list .box {
+    transition: 0.5s ease-out;
+    cursor: pointer;
+}
+.foods-list .box:hover {
+    transform: scale(1.05);
+} 
+/* fidelity prog */
+.fidelity_prog {
+    margin: 35px 0;
+    height: 350px;
+    width: 100%;
+    background: url(img31.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+
+.fidelity_prog div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.fidelity_prog button {
+  margin-top: 25px;  
+  background-color: #f7a800;
+}
+.fidelity_prog .div1 {
+    width: 400px;
+}
+
+.fidelity_prog .div2 {
+    width: 350px;
+    margin-top: 25px;
+}
+
+
+
+.fidelity_prog .div3 {
+    width: 410px;
+}
+.fidelity_prog img {
+    width: 100px;
+}
+
+.fidelity_prog img {
+    box-shadow: 0 0 9px rgba(0,0,0,0,1);
+    width: 350px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.fidelity_prog .img {
+    transition: 0.5s ease-out;
+    cursor: pointer;
+}
+
+
+.fidelity_prog img:hover {
+    transform: scale(1.05);
+} 
+
+/* little-food */
+.little-food {
+   padding: 0 10%; 
+}
+.little-food img {
+    width: 220px;
+}
+.little-food_box {
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 280px;
+}
+.little-food_box .box {
+    background-color: #fdf5ee;
+    box-shadow: 0 0 8px rgba(0,0,0,0,1);
+    border-radius: 18px;
+    padding: 20px;
+    transition: 0.25s;
+    height: 100%;
+}
+.little-food_box .box:hover {
+    transform: scale(0.9);
+}
+
+
+/* SECTION PRINCIPALE */
+.infos-section {
+    background-color: #fcf9f5; /* Fond crème clair identique à ta photo */
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.infos-container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    gap: 30px; /* Espace entre le bloc horaires et la carte */
+}
+
+/* --- STYLE DES HORAIRES (GAUCHE) --- */
+.horaires-box {
+    flex: 1;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.horaires-box h2 {
+    font-family: 'Anton', sans-serif;
+    font-size: 24px;
+    margin-bottom: 25px;
+    color: #000000;
+}
+
+.jour-ligne {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7ebe1; /* Couleur marron très clair des lignes */
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    color: #333;
+}
+
+/* Style spécial pour mettre en valeur le Vendredi */
+.jour-ligne.jour-actuel {
+    background-color: #bb2337; /* Rouge Burger King */
+    color: #ffffff;
+}
+
+.fermer {
+    font-style: italic;
+    opacity: 0.7;
+}
+
+/* --- STYLE DE LA CARTE (DROITE) --- */
+.map-box {
+    flex: 1.5; /* La carte est un peu plus large que les horaires */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.map-box iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 380px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* Boutons sous la carte */
+.map-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-map {
+    flex: 1;
+    background-color: #bb2337; /* Rouge identique aux boutons */
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    padding: 12px;
+    font-family: 'Anton', sans-serif;
+    font-size: 16px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-map:hover {
+    background-color: #961b2a; /* Rouge un peu plus sombre au survol */
+}
+
+/* --- DESIGN POUR LES SMARTPHONES --- */
+@media (max-width: 768px) {
+    .infos-container {
+        flex-direction: column; /* Aligne les blocs l'un sous l'autre sur téléphone */
+    }
+}
+
+
+
+
+.jour-ligne {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7ebe1; 
+    padding: 14px 20px;          /* 👈 Un peu plus d'espace pour respirer */
+    margin-bottom: 12px;
+    border-radius: 6px;
+    
+    /* --- CONFIGURATION DE LA POLICE POUR TOUT LIRE CLAIREMENT --- */
+    font-family: 'Anton', Arial, sans-serif; /* 👈 Utilise ta police compacte et bien visible */
+    font-size: 18px;             /* 👈 Texte plus grand */
+    font-weight: 900;            /* 👈 Texte très épais/gras */
+    text-transform: uppercase;   /* 👈 Aligne le style en majuscules */
+    letter-spacing: 1px;         /* 👈 Un mini espace entre les lettres pour la clarté */
+    color: #2c1a11;              /* 👈 Un marron très foncé (presque noir) pour un super contraste */
+}
+
+/* On s'assure que le texte reste bien blanc sur la ligne rouge du Vendredi */
+.jour-ligne.jour-actuel {
+    background-color: #bb2337; 
+    color: #ffffff !important;
+}
+
+/* Met en valeur l'affichage "FERMÉ" du dimanche */
+.fermer {
+    color: #bb2337;              /* 👈 Affiche "FERMÉ" en rouge pour que ce soit flagrant */
+    font-weight: bold;
+}
+
+
+.precision-horaires {
+    font-size: 13px;
+    font-style: italic;
+    color: #666666;      /* Un gris discret */
+    text-align: center;  /* Centre le texte sous le tableau */
+    margin-top: 15px;    /* Donne un peu d'espace avec la ligne Dimanche */
+    font-family: Arial, sans-serif;
+}
+
+
+/* footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    margin-top: 20px;
+    padding: 25px 10%;
+}
+footer p {
+    font-size: 15px;
+}
+.icones_social {
+    margin: 20p 0x;
+}
+.icones_social i {
+    margin-right: 20px;
+    font-size: 20px;
+}
+footer img {
+    margin-top: 20px;
+    border: 1px solid #fff;
+    height: 50px;
+    cursor: pointer;
+}
+footer img:last-child {
+    margin-left: 10px;
+}
+footer .div2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .div2 h3 {
+    margin-bottom: 10px;
+}
+
+
+/* On cible les liens de contact dans la zone div2 pour couper les majuscules */
+.div2 ul a {
+    text-transform: none !important; /* 👈 Désactive le forçage en majuscules */
+}
+
+
+footer .div2 ul {
+    display: flex;
+    flex-direction: column;
+}
+footer .div2 ul a {
+    font-size: 13px;
+    color: #fff;
+    text-decoration: 0;
+    margin-bottom: 5px;
+    transition: 0.5s;
+}
+footer .div2 ul a:hover {
+    letter-spacing: 0.5px;
+}
+footer .div3 {
+    text-align: center;
+}
+footer .div3 p:first-child {
+    font-size: 13px;
+}
+footer .div3 p:last-child {
+    font-size: 12px;
+    color: #999;
+    margin-top: 10px;
+}
