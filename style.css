@@ -96,6 +96,40 @@ button img {
     margin-left: 20px;
 }
 
+/* --- CONFIGURATION TÉLÉPHONE --- */
+@media screen and (max-width: 768px) {
+    
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        gap: 10px;
+    }
+
+    h1.logo {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    img.logo {
+        max-width: 80%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+
+
+
 .menu {
     display: flex;
     align-items: center;
@@ -105,6 +139,10 @@ button img {
     display: flex;
     list-style: none;
 }
+
+
+
+
 .menu ul a { 
 margin-left: 20px;
 text-transform: capitalize;
