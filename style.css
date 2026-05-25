@@ -509,6 +509,7 @@ h3 {
 /* Style spécial pour mettre en valeur le Vendredi */
 .jour-ligne.jour-actuel {
     background-color: #bb2337; /* Rouge Burger King */
+
     color: #ffffff;
 }
 
