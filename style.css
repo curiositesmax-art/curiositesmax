@@ -326,7 +326,7 @@ display: block;
 /* home */
 .home {
     margin-top: 80px;
-    background: url(img2.jpg);
+    background: url(img04.jpg);
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -334,7 +334,7 @@ display: block;
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    padding: 40px;
+    padding: 60px;
 }
 /* foods */
 .foods {
