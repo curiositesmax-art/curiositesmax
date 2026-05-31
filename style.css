@@ -790,3 +790,112 @@ footer .div3 p:last-child {
 📱 Mobile      → max 768px  (téléphone)
 📟 Tablette    → max 1024px (tablette)
 📱 Petit mobile→ max 480px  (petits écrans)
+
+
+/* ===== RESPONSIVE MOBILE ===== */
+
+/* Tablettes (max 768px) */
+@media (max-width: 768px) {
+
+  /* Navigation */
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* Images */
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Grilles / colonnes */
+  .grid, .cards, .columns {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Textes */
+  h1 { font-size: 1.8rem; }
+  h2 { font-size: 1.4rem; }
+  p  { font-size: 1rem; }
+}
+
+/* Téléphones (max 480px) */
+@media (max-width: 480px) {
+
+  body {
+    padding: 0 10px;
+  }
+
+  /* Menu navigation */
+  nav a {
+    display: block;
+    padding: 8px 0;
+    text-align: center;
+  }
+
+  /* Boutons */
+  button, .btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+  }
+
+  /* Titres */
+  h1 { font-size: 1.4rem; }
+  h2 { font-size: 1.2rem; }
+
+  /* Sections */
+  section, .container {
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+
+
+
+/* MOBILE - toutes tailles de téléphones */
+
+@media (max-width: 768px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    width: 100%;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  div, section, header, footer, article {
+    width: 100% !important;
+    float: none !important;
+    display: block !important;
+  }
+
+  table {
+    width: 100% !important;
+    display: block;
+    overflow-x: auto;
+  }
+
+  h1 { font-size: 1.5rem; }
+  h2 { font-size: 1.3rem; }
+  h3 { font-size: 1.1rem; }
+  p  { font-size: 0.95rem; }
+
+  button, a {
+    padding: 10px;
+    font-size: 1rem;
+  }
+}
