@@ -508,9 +508,9 @@ h3 {
 
 /* Style spécial pour mettre en valeur le Vendredi */
 .jour-ligne.jour-actuel {
-    background-color: #bb2337; /* Rouge Burger King */
+    background-color: #f7ebe1; /* Rouge Burger King */
 
-    color: #ffffff;
+    color: #333;
 }
 
 .fermer {
@@ -598,7 +598,8 @@ h3 {
 
 /* Met en valeur l'affichage "FERMÉ" du dimanche */
 .fermer {
-    color: #bb2337;              /* 👈 Affiche "FERMÉ" en rouge pour que ce soit flagrant */
+    font-size: 18px; 
+    color: #333;              /* 👈 Affiche "FERMÉ" en rouge pour que ce soit flagrant */
     font-weight: bold;
 }
 
