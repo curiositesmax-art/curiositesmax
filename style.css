@@ -344,11 +344,12 @@ display: block;
 h1 {
     font-size: 40px;
     text-align: center;
-    text-transform: uppercase;
+    text-transform: none;
     font-family: 'Anton ' , sans-serif;
 }
 .foods p {
     text-align: center;
+    text-transform: none;
     margin-top: 15px;
     margin-bottom: 25px;
 }
@@ -434,6 +435,24 @@ h3 {
     transform: scale(1.05);
 } 
 
+
+
+
+.image-destinations {
+  width: 100%;
+  max-width: 800px;
+  display: block;
+  margin: 0 auto 20px auto;
+  border-radius: 12px;
+}
+h2 {
+  text-align: center;
+}
+
+
+
+
+
 /* little-food */
 .little-food {
    padding: 0 10%; 
@@ -459,6 +478,7 @@ h3 {
 .little-food_box .box:hover {
     transform: scale(0.9);
 }
+
 
 
 /* SECTION PRINCIPALE */
