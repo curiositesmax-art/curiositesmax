@@ -920,3 +920,41 @@ footer .div3 p:last-child {
     font-size: 1rem;
   }
 }
+
+
+
+
+
+
+
+/* Style normal (ordinateur) - reste tel quel */
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.numero {
+  font-size: 18px; /* taille actuelle sur ordinateur */
+}
+
+.icone-tel {
+  width: 50px;
+  height: 50px;
+}
+
+/* Mobile - tout devient plus petit */
+@media (max-width: 768px) {
+  .contact {
+    gap: 6px; /* rapproche un peu plus les éléments */
+  }
+
+  .numero {
+    font-size: 14px; /* plus petit sur mobile */
+  }
+
+  .icone-tel {
+    width: 35px;
+    height: 35px;
+  }
+}
